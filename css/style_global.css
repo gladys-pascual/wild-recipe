@@ -1,0 +1,248 @@
+/* Global CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,700&display=swap");
+
+body {
+  font-family: "Source Sans Pro", monospace;
+
+  letter-spacing: 0.1mm;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px grey;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropbtn,
+a {
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+
+#Header {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(194, 234, 232, 1) 0%,
+    rgba(194, 234, 232, 1) 52%,
+    rgba(167, 209, 207, 1) 80%,
+    rgba(131, 201, 197, 1) 100%
+  );
+  display: flex;
+  align-items: center !important;
+  padding: 5px;
+}
+#Logo_Header {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  margin-left: 24px;
+}
+
+#Home_Header {
+  padding-left: 20px;
+}
+
+.nav-links {
+  padding: 5px;
+  width: 100%;
+}
+
+#headerLinks {
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  margin-top: 0px;
+  align-items: baseline;
+}
+
+#contact_header {
+  padding: 14px 16px;
+  margin: 0px 10px;
+  color: black;
+  transition: 0.2s;
+}
+
+/* recipe button css style start */
+.navbar {
+  overflow: hidden;
+}
+
+.dropdown {
+  overflow: hidden;
+  display: inline;
+  margin: 0px 20px;
+  transition: 0.2s;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  transition: 0.2s;
+}
+
+.dropbtn,
+#contact_header {
+  font-size: 20px;
+  letter-spacing: 0.4mm;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+#contact_header:hover {
+  background-color: rgba(16, 170, 162, 0.247);
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* recipe button css style end */
+
+/* Footer */
+#Footer {
+  margin-top: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(242, 242, 242, 1) 89%,
+    rgba(171, 171, 171, 1) 100%
+  );
+  padding-bottom: 50px;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+#FooterTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#FooterTitleStroked {
+  margin-top: -5px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: line-through;
+  color: darkgray;
+  font-weight: bold;
+  font-size: 3em;
+  opacity: 0.1;
+}
+
+#FooterSubTitle {
+  z-index: 100;
+  margin-top: -50px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#LogoFooterDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#LogoFooterImg {
+  width: 100px;
+  height: 100px;
+  margin-right: 18px;
+}
+#LogoFooterImg:hover {
+  cursor: pointer;
+}
+
+#ContactMail {
+  font-style: oblique;
+}
+#ContactUs {
+  transition: 0.3s;
+}
+#ContactUs:hover {
+  color: rgba(0, 0, 0, 0.575);
+}
+@media (max-width: 400px) {
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 0px;
+  }
+  #Header {
+    width: 100%;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 25px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  #Footer {
+    margin-top: 40px;
+  }
+  #FooterSubTitle {
+    margin-top: 10px;
+  }
+  #FooterTitleStroked {
+    display: none;
+  }
+  #LogoFooterDiv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #LogoFooterImg {
+    margin-right: 0px;
+  }
+  #FooterSubTitle {
+    font-size: 1.1em;
+  }
+  #ContactInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

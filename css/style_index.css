@@ -1,0 +1,72 @@
+/* Sorin */
+
+/* Title */
+@media (min-width: 400px) {
+  #Maintitle {
+    text-align: center;
+    font: 35px "Source Sans Pro", sans-serif;
+  }
+}
+@media (max-width: 400px) {
+  #Maintitle {
+    text-align: center;
+    font: 25px "Source Sans Pro", sans-serif;
+  }
+}
+
+/* Recepies */
+
+@media (min-width: 400px) {
+  #RecipesCards {
+    display: flex;
+    text-align: center;
+  }
+  #RecipeOnTheLeft {
+    width: 33.3%;
+  }
+  #RecipeInTheCenter {
+    width: 33.3%;
+  }
+  #RecipeOnTheRight {
+    width: 33.3%;
+  }
+  #imgrecipe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #RecipesCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #RecipeOnTheLeft {
+    width: 100%;
+  }
+  #RecipeInTheCenter {
+    width: 100%;
+  }
+  #RecipeOnTheRight {
+    width: 100%;
+  }
+  #imgrecipe {
+    width: 100%;
+  }
+}
+
+#RecipeOnTheLeft,
+#RecipeInTheCenter,
+#RecipeOnTheRight {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: 100%;
+  transition: 0.8s;
+}
+
+#RecipeOnTheLeft:hover,
+#RecipeInTheCenter:hover,
+#RecipeOnTheRight:hover {
+  background-color: rgba(128, 128, 128, 0.295);
+}
